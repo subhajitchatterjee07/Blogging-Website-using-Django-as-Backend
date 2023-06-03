@@ -2,20 +2,22 @@ from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def index(request):
-    context = {
-        "variable" : "This is sent"
-    }
-    return render(request, 'index.html',context)
+    
+    return render(request, 'index.html')
     #return HttpResponse("This is Homepage")
 
 def about(request):
-    return HttpResponse("This is About page")
+    return render(request, 'about.html',)
+    #return HttpResponse("This is About page")
 
 def services(request):
-    return HttpResponse("This is services page")
+    return render(request, 'services.html',)
+    #return HttpResponse("This is services page")
 
 def contact(request):
-    return HttpResponse("This is Contact page")
+    return render(request, 'contact.html')
+    #return HttpResponse("This is Contact page")
 
 def pricing(request):
-    return HttpResponse("This is Pricing page")
+    return render(request, 'pricing.html')
+    #return HttpResponse("This is Pricing page")
