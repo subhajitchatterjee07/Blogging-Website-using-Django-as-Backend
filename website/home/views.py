@@ -21,3 +21,7 @@ def contact(request):
 def pricing(request):
     return render(request, 'pricing.html')
     #return HttpResponse("This is Pricing page")
+
+def pricing(request):
+    return render(request, 'pricing.html')
+    #return HttpResponse("This is Pricing page")
